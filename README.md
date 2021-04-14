@@ -6,6 +6,6 @@ I created a java entity, Programs. You can add the records from the cvs file to 
 
 if you use eclipse make sure you have a maven directory in your local computer
 
-Also in the application.properties file in \src\main\resources change the port number based on the avaibility of your machine
+Also in the application.properties file in \src\main\resources change the port number based on the availability of your machine
 
-To acess the web page of project, type in the url http://localhost:"insert port number"/chartform
+To access the web page of project, type in the url http://localhost:"insert port number"/chartform
