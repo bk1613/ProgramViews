@@ -65,8 +65,8 @@ $(document).ready(function() {
 </head>
 <body>
 <div>Enter the viewers' home town(s)</div>
-<input class="form-control" type="text" id="hometown1" name="hometown1"/>
-<input class="form-control" type="text" id="hometown2" name="hometown2"/>
+home town 1<input class="form-control" type="text" id="hometown1" name="hometown1"/>
+home town 2<input class="form-control" type="text" id="hometown2" name="hometown2"/>
 <input class="btn-sm btn-primary sbtButton" type="button" id="submitBtn" value="submit"/>
 <div id="chartContainer" style="height: 370px; width: 100%;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
