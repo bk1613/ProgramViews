@@ -32,9 +32,9 @@ public class ProgramServiceImpl implements ProgramService {
 	}
 
 	@Override
-	public List<ChartView> findchartviews() {
+	public List<ChartView> findchartviews(String hov1, String hov2) {
 		// TODO Auto-generated method stub
-		return prodao.findTotalView();
+		return prodao.findTotalView(hov1, hov2);
 	}
 	
 	

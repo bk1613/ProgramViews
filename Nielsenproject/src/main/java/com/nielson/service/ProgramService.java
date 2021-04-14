@@ -9,5 +9,5 @@ public interface ProgramService {
 
 	public Programs saveProgram(Programs program);
 	public List<Programs> findallPrograms();
-	public List<ChartView> findchartviews();
+	public List<ChartView> findchartviews(String hov1, String hov2);
 }

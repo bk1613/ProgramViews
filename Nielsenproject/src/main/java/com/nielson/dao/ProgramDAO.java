@@ -6,6 +6,6 @@ import com.nielson.domain.ChartView;
 
 public interface ProgramDAO {
 
-	public List<ChartView> findTotalView();
+	public List<ChartView> findTotalView(String hov1, String hov2);
 	
 }

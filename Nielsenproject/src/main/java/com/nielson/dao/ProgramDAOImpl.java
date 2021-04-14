@@ -18,10 +18,10 @@ public class ProgramDAOImpl implements ProgramDAO {
 	JdbcTemplate jdbcTemplate;
 
 	@Override
-	public List<ChartView> findTotalView() {
-		String sql = "select genre, sum(Viewers) from programs where ViewerHometown = 'Pittsburgh' or ViewerHometown = 'Cleveland' group by genre";
-		
-		List<ChartView> views = jdbcTemplate.query(sql, new RoomMapper());
+	public List<ChartView> findTotalView(String hov1, String hov2) {
+		String sql = "select genre, sum(Viewers) from programs where ViewerHometown = ? or ViewerHometown = ? group by genre";
+		Object[] args = {hov1, hov2};
+		List<ChartView> views = jdbcTemplate.query(sql, args, new RoomMapper());
 		
 		
 		return views;

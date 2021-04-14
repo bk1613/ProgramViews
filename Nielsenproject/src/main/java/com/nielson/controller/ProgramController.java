@@ -36,11 +36,15 @@ public class ProgramController {
 		return new ResponseEntity<Programs>(HttpStatus.ACCEPTED);
 	}
 	
-	@GetMapping("showTotalviews")
-	public ResponseEntity<?> shownumberviews(){
+	@PostMapping("showTotalviews")
+	public ResponseEntity<?> shownumberviews(@RequestBody String homes){
 		
 		
-		List<ChartView> viewlist = proSer.findchartviews();
+		JSONObject homeviews = new JSONObject(homes);
+		
+		String hov1 = homeviews.getString("homeview1");
+		String hov2 = homeviews.getString("homeview2");
+		List<ChartView> viewlist = proSer.findchartviews(hov1, hov2);
 		JSONObject jsa = new JSONObject();
 		jsa.put("views", viewlist);
 		return new ResponseEntity<String>(jsa.toString(), HttpStatus.OK);
