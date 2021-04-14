@@ -2,7 +2,7 @@ Instructions
 
 To run this application, you need to install Oracle or MySQL and spring tool suite/eclipse. If you already have MySQL or Oracle then change the connection by giving it a different url of the database, and change the username and password in this file AppConfig.java
 
-I created a java entity, Programs. You add the records from the cvs file to the database by going to the java file, ReadCVSfile, and run it.
+I created a java entity, Programs. You can add the records from the cvs file to the database by going to the java file, ReadCVSfile, and run it.
 
 if you use eclipse make sure you have a maven directory in your local computer
 
